@@ -1,0 +1,26 @@
+{
+  "name": "ebook-sniff",
+  "version": "1.0.0",
+  "description": "Tell what an ebook file really is from its bytes: EPUB, MOBI, AZW3, KFX, PalmDOC, FB2, CBZ, DRM, and files that only look like books.",
+  "keywords": ["ebook", "epub", "mobi", "azw3", "kfx", "fb2", "cbz", "drm", "file-type", "magic-bytes", "palmdoc"],
+  "license": "MIT",
+  "author": "Doniyor Erkinov <erkinovdoniyor03@gmail.com>",
+  "homepage": "https://github.com/doniyorerkinov/ebook-sniff#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/doniyorerkinov/ebook-sniff.git" },
+  "bugs": "https://github.com/doniyorerkinov/ebook-sniff/issues",
+  "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "types": "./dist/index.d.ts",
+  "bin": { "ebook-sniff": "bin/ebook-sniff.js" },
+  "files": ["dist", "bin"],
+  "engines": { "node": ">=20" },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "tsc && node --test"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
