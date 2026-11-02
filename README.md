@@ -7,7 +7,7 @@ A file called `book.epub` can be a sign-in page saved by a broken download. `com
 browser and in Node 20+.
 
 ```sh
-npm install github:doniyorerkinov/ebook-sniff
+npm install ebook-sniff
 ```
 
 ```js
@@ -28,7 +28,7 @@ await sniff(await readFile('Dune.azw'), 'Dune.azw');
 ```
 
 ```sh
-npx github:doniyorerkinov/ebook-sniff books/*
+npx ebook-sniff books/*
 ```
 
 ## Result
